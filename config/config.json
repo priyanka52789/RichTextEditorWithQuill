@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "rtf-editor-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/rtfEditor/RtfEditorWebPart.js",
+          "manifest": "./src/webparts/rtfEditor/RtfEditorWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "RtfEditorWebPartStrings": "lib/webparts/rtfEditor/loc/{locale}.js"
+  }
+}

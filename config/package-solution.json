@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "rich-text-editor-client-side-solution",
+    "id": "3f502929-b306-451f-81ea-5fd6ebb96185",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false
+  },
+  "paths": {
+    "zippedPackage": "solution/rich-text-editor.sppkg"
+  }
+}
