@@ -8,11 +8,14 @@ import styles from "./RtfEditor.module.scss";
 import { Icon } from "office-ui-fabric-react/lib/Icon";
 import MarkdownShortcuts from "quill-markdown-shortcuts";
 
+var self: any = null;
+var myQuill: any = null;
+var Delta = Quill.import("delta");
+
 // var Block = Quill.import("blots/block");
 // Block.tagName = "DIV";
 // Quill.register(Block, true);
 
-Quill.register("modules/markdownShortcuts", MarkdownShortcuts);
 // var Block = Quill.import("blots/block");
 // class Div extends Block {}
 // Div.tagName = "div";
@@ -20,16 +23,15 @@ Quill.register("modules/markdownShortcuts", MarkdownShortcuts);
 // Div.allowedChildren = Block.allowedChildren;
 // Div.allowedChildren.push(Block);
 // Quill.register(Div, true);
+
+Quill.register("modules/markdownShortcuts", MarkdownShortcuts);
+
 Quill.register(
   {
     "modules/better-table": QuillBetterTable,
   },
   true
 );
-
-var self: any = null;
-var myQuill: any = null;
-var Delta = Quill.import("delta");
 
 const CustomButtonSrcCode = () => (
   <span className={styles.fontSize}>

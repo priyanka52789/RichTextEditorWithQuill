@@ -47,13 +47,13 @@ export default class RtfEditorWebPart extends BaseClientSideWebPart<
       RtfEditor,
       {
         description: this.properties.description,
-        pagestate:
-          this.displayMode == DisplayMode.Edit ? "EditMode" : "ReadMode",
-        context: this.context,
         jsfilepath: this.properties.jsfilepath,
         cssfilepath: this.properties.cssfilepath,
         htmlCode: this.htmlCode,
         setHtmlCodeProp: this.setHtmlCodeProp.bind(this),
+        pagestate:
+          this.displayMode == DisplayMode.Edit ? "EditMode" : "ReadMode",
+        context: this.context,
       }
     );
 
